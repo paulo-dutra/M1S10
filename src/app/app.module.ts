@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { BotoesFiltroComponent } from './components/botoes-filtro/botoes-filtro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    BotoesFiltroComponent
   ],
   imports: [
     BrowserModule,
