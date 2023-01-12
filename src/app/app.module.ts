@@ -18,26 +18,16 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path:'about',
+    path: 'about',
     component: AboutComponent
   },
   {
-    path:'home',
+    path: 'home',
     component: HomeComponent,
-    children:[
-      {
-        path:'todos',
-        component: HomeComponent
-      },
-      {
-        path:'nao-lidos',
-        component: HomeComponent
-      },
-      {
-        path:'lidos',
-        component: HomeComponent
-      }
-    ]
+  },
+  {
+    path: 'home/:filtro',
+    component: HomeComponent
   }
 ]
 @NgModule({
