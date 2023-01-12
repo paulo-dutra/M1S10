@@ -22,6 +22,9 @@ export class ContentComponent implements OnInit {
 }
 
 atualizarConteudo(filtro: string){
+  if (filtro === undefined){
+    filtro = 'todos'
+  }
   let lido: boolean
   this.listaFiltrada=[]
       switch (filtro) {
