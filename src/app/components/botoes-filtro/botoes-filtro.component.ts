@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'ntap-botoes-filtro',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class BotoesFiltroComponent {
 
+  @Output() filtrar = new EventEmitter<string>
+
+  enviarFiltro(filtro : string){
+    this.filtrar.emit(filtro)
+  }
 }
